@@ -84,3 +84,26 @@
     text-decoration: underline;
   }
   
+  #image-gallery {
+    display: flex;
+    justify-content: space-between; /* space out images evenly */
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* makes it responsive on small screens */
+  }
+  
+  #image-gallery figure {
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  #image-gallery img {
+    width: 100%; /* makes them all match the container width */
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+  
