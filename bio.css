@@ -114,3 +114,23 @@
   gap: 20px;
   margin-top: 10%; 
 }
+
+#image-gallery2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: auto auto; /* 2 rows */
+  gap: 20px;
+  margin-top: 10%;
+  justify-items: center; /* centers the items in their grid cells */
+}
+
+#image-gallery2 figure {
+  text-align: center;
+  max-width: 300px;
+}
+
+/* Optional: center the third image across the grid */
+#image-gallery2 figure:nth-child(3) {
+  grid-column: span 2; /* makes it take up both columns */
+  justify-self: center; /* centers it in the grid area */
+}
