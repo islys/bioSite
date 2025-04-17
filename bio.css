@@ -105,5 +105,12 @@
     border-radius: 8px;
   }
 
-
-  
+/* grid for the columns */
+#image-gallery {
+  display: grid;
+  /* three equal width columns */
+  grid-template-columns: repeat(3, 1fr); 
+  /* creating spacing */
+  gap: 20px;
+  margin-top: 10%; 
+}
